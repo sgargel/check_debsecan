@@ -153,10 +153,6 @@ case ${suite} in
     echo "ERROR: The suite you are using is to old. Please upgrade to something newer, like Woody"
     exit 3
   ;;
-  stretch)
-    debug "Stretch is not supported at the moment. Switching suite to sid."
-    suite="sid"
-  ;;
 esac
 
 while getopts "dP:hf:F:o:O:l:L:m:M:u:U:s:r" opt; do
